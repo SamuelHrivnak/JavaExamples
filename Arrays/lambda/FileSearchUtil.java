@@ -23,21 +23,11 @@ public class FileSearchUtil {
 
 	}
 
-	// public List<String> findAllFiles(File start) {
-	// List<String> array = new ArrayList<>();
-	// File[] list = start.listFiles();
-	// if (list == null)
-	// return array;
-	//
-	// for (File file : list) {
-	// if (file.isFile()) {
-	// findAllFiles(file);
-	// array.add(file.getName());
-	// }
-	// }
-	// return array;
-	//
-	// }
+	
+	
+	
+	
+	
 
 	public List<String> findAllFiles(File dir) {
 		if (dir.isFile()) {
@@ -63,19 +53,6 @@ public class FileSearchUtil {
 		return array;
 	}
 
-//	public List<String> findAllFilesAndDirectories(File dir) {
-//		if (dir == null) {
-//			array.add(dir.toString());
-//			return array;
-//		}
-//		
-//		for (File file : dir.listFiles()) {
-//			array.add(dir.toString());
-//			findAllFiles(file);
-//		}
-//		return array;
-//	}
-//	
 	public List<String> findAllFilesAndDirectories(File root)
 	{
 	    File[] files = root.listFiles(); 
